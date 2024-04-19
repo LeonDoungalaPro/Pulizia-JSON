@@ -1,6 +1,6 @@
 # Data Cleaner
 
-This repository contains a Python script named `DataCleaner.py`, developed by **Leon Doungala** from **Peoplelab**, which is designed to clean and process JSON data.
+This repository contains a Python script named `DataCleaner.py`, developed from **Peoplelab**, which is designed to clean and process JSON data.
 
 ## Overview
 
