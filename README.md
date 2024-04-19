@@ -1,11 +1,10 @@
-```markdown
 # Data Cleaner
 
-This document provides an overview of a Python script named `DataCleaner.py`, authored by Leon Doungala from Peaoplelab, which is designed to clean and process JSON data.
+This repository contains a Python script named `DataCleaner.py`, developed by **Leon Doungala** from **Peoplelab**, which is designed to clean and process JSON data.
 
 ## Overview
 
-The `DataCleaner.py` script consists of several functions to parse, clean, map, and process JSON data. It is particularly useful for cleaning data obtained from various sources, such as web scraping or API responses, before further analysis or storage.
+The `DataCleaner.py` script offers a set of functions to parse, clean, map, and process JSON data. It is specifically useful for preparing data acquired from diverse sources, including web scraping or API responses, for subsequent analysis or storage.
 
 ## Functions
 
@@ -13,10 +12,10 @@ The `DataCleaner.py` script consists of several functions to parse, clean, map, 
 
 This is the main function of the script. It takes a JSON string as input, cleans and processes it, and returns the cleaned JSON data.
 
-#### Parameters:
+**Parameters:**
 - `input_string` (str): The input JSON data as a string.
 
-#### Returns:
+**Returns:**
 - `str`: The cleaned and processed JSON data as a string, or 0 if the data is empty.
 
 ### Parsing Functions
@@ -49,9 +48,9 @@ The script includes a testing section where you can insert your input JSON data 
 
 ## Dependencies
 
-- `json`: For JSON parsing and manipulation.
-- `html`: For handling HTML entities.
-- `re`: For regular expression-based text processing.
+    - `json`: For JSON parsing and manipulation.
+    - `html`: For handling HTML entities.
+    - `re`: For regular expression-based text processing.
 
 ## Usage
 
@@ -63,7 +62,11 @@ To use the `DataCleaner` function, follow these steps:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-© 2024 Peaoplelab. All rights reserved. Unauthorized copying or distribution of this script is prohibited.
-```
+**Author:** Leon Doungala  
+**Employee:** Peoplelab
+
+© 2024 Peoplelab. All rights reserved.
+
+*Date: April 19, 2024*
