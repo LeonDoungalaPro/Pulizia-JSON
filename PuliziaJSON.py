@@ -26,7 +26,7 @@ def DataCleaner(input_string) -> str:
         dict: The parsed JSON data.
         """
         
-        input_string = input_string.replace('"[{"type":', '[{"type":').replace('"}]"', '"}]')
+        input_string = input_string.replace('"[{"type":', '[{"type":').replace('"}]"', '"}]').replace("json_compiled","")
         input_string = ' '.join(input_string.split())
         data = []
         lines = input_string.split('\n')  # Split the string into lines
