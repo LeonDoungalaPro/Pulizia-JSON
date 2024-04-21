@@ -31,12 +31,16 @@ def DataCleaner(input_string) -> str:
             """
             input_string = input_string.replace('"[{"type":', '[{"type":').replace('"}]"', '"}]').replace("json_compiled","")
             input_string = ' '.join(input_string.split())
+            
             data = []
             lines = input_string.split('\n')
+          
             for line_number, line in enumerate(lines, start=1):
                 line = line.strip()
+                line
                 if line:
                     data.append(json.loads(line))
+                
             return data
 
 
@@ -95,7 +99,7 @@ def DataCleaner(input_string) -> str:
                                         'userData': strip_html_tags(data_item)
                                     }
                                     cleaned_data.append(cleaned_item)
-
+            
             cleaned_json = json.dumps(cleaned_data, indent=4)
             cleaned_json = json.loads(cleaned_json)
             return cleaned_json
@@ -137,6 +141,7 @@ def DataCleaner(input_string) -> str:
                     else:
                         continue
                     break
+                referto_data
             return referto_data
 
 
@@ -159,8 +164,8 @@ def DataCleaner(input_string) -> str:
             map_user_data(data, output)
             data = [entry for entry in data if not entry.get("userData", "").startswith("option-")]
             filtered_data = [d for d in data if d.get('userData') is not None and d.get('userData') != '']
-
-            result = json.dumps(filtered_data, indent=4).capitalize()
+            
+            result = json.dumps(filtered_data, indent=4)
             return json.loads(result)
 
 
@@ -170,6 +175,7 @@ def DataCleaner(input_string) -> str:
         output_data = parse_string_to_json(input_string)
         referto_data = clean_json(output_data)
         finally_data = process_file(referto_data, output_data)
+        finally_data
         cleaned_json = json.dumps(finally_data, indent=4)
         
         return cleaned_json
