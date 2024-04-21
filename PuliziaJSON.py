@@ -29,7 +29,7 @@ def DataCleaner(input_string) -> str:
             Returns:
                 list: Parsed JSON data.
             """
-            input_string = input_string.replace('"[{"type":', '[{"type":').replace('"}]"', '"}]')
+            input_string = input_string.replace('"[{"type":', '[{"type":').replace('"}]"', '"}]').replace("json_compiled","")
             input_string = ' '.join(input_string.split())
             data = []
             lines = input_string.split('\n')
@@ -61,7 +61,7 @@ def DataCleaner(input_string) -> str:
             text = text.replace('Â°C', '°C')
             text = text.replace('\"', '"')
             text = text.encode('latin1', 'ignore').decode('utf-8', 'ignore')
-            text = text.capitalize()
+           
             return text
 
 
@@ -160,7 +160,7 @@ def DataCleaner(input_string) -> str:
             data = [entry for entry in data if not entry.get("userData", "").startswith("option-")]
             filtered_data = [d for d in data if d.get('userData') is not None and d.get('userData') != '']
 
-            result = json.dumps(filtered_data, indent=4)
+            result = json.dumps(filtered_data, indent=4).capitalize()
             return json.loads(result)
 
 
