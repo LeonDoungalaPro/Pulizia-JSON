@@ -4,7 +4,7 @@ This repository contains a Python script named `DataCleaner.py`, developed from 
 
 ## Overview
 
-The `DataCleaner.py` script offers a set of functions to parse, clean, map, and process JSON data. It is specifically useful for preparing data acquired from diverse sources, including web scraping or API responses, for subsequent analysis or storage.
+The DataCleaner.py script provides a suite of functions for parsing, cleaning, mapping, and processing JSON data from referral data originating from Adiuvet
 
 ## Functions
 
