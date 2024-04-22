@@ -37,7 +37,6 @@ def DataCleaner(input_string) -> str:
           
             for line_number, line in enumerate(lines, start=1):
                 line = line.strip()
-                line
                 if line:
                     data.append(json.loads(line))
                 
